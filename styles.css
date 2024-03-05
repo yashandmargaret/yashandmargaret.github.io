@@ -1,9 +1,15 @@
+@font-face {
+  font-family: 'RoxieRossa';
+  src: url('roxie_rossa.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+
 body {
-  background: #FFFCEF;
+  background: linear-gradient(#FFE9EF, #FDEBF0, #FCEDF1);
   padding: 0;
   margin: 0;
   width: 100%;
-  font-family: 'Roboto Serif', sans-serif;
+  height: 100%;
+  font-family: 'RoxieRossa', sans-serif;
 }
 
 .menu {
@@ -59,8 +65,29 @@ body {
   transform: rotate(-45deg) translate(6px, -5px);
 }
 
-.main-pic {
+.content-block-rsvp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
+  margin-top: 30px;
+  color: #287255;
+}
+
+.margin-left--regular {
+  margin-left: 15px;
+}
+
+.content-block-rsvp--container {
+  width: 78%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-pic {
+  max-width: 42%;
+  border-radius: 150px;
 }
 
 .main-content--details {
@@ -84,10 +111,82 @@ body {
 }
 
 .rsvp-button {
-  font-size: 16px;
-  padding: 10px 15px;
-  border-radius: 12px;
-  border: 2px solid #287255;
+  font-family: 'Roboto';
+  font-size: 11px;
+  padding: 5px 18px;
+  border-radius: 5px;
+  border: 0.5px solid #7FB7A2;
   background: transparent;
+  color: #7FB7A2;
+  font-weight: 300;
+  margin-top: 15px;
+}
+
+.header {
+  background-image: url('header.png');
+  min-height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #AA6B7C;
+}
+
+.header--title {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  margin-top: 30%;
   color: #287255;
+  font-size: 32px;
+}
+
+.header--subtitle_small {
+  font-weight: lighter;
+  font-family: Roboto, sans-serif;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 10px;
+}
+
+.header--subtitle {
+  font-weight: lighter;
+  font-family: Roboto, sans-serif;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.content-block-details {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.arch-container {
+  max-width: 133px;
+  color: #AA6B7C;
+}
+
+.arch-pic {
+  width: 133px;
+  height: 184px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.arch-pic-1 {
+  background-image: url('venue-1.png');
+}
+
+.arch-pic-2 {
+  background-image: url('venue-2.jpg');
+}
+
+.details-heading {
+  font-weight: 100;
+  font-size: medium;
 }
