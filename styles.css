@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'RoxieRossa';
-  src: url('roxie_rossa.ttf')  format('truetype') /* Safari, Android, iOS */
+  src: url('roxie_rossa.ttf') format('truetype')
+    /* Safari, Android, iOS */
 }
 
 body {
@@ -76,6 +77,12 @@ body {
 
 .margin-left--regular {
   margin-left: 15px;
+  font-size: 41px;
+}
+
+.margin-left--extra {
+  margin-left: 30px;
+  font-size: 41px;
 }
 
 .content-block-rsvp--container {
@@ -107,15 +114,15 @@ body {
 }
 
 .main-content--rsvp {
-  margin-top: 30px;  
+  margin-top: 30px;
 }
 
 .rsvp-button {
   font-family: 'Roboto';
-  font-size: 11px;
-  padding: 5px 18px;
-  border-radius: 5px;
-  border: 0.5px solid #7FB7A2;
+  font-size: 24px;
+  padding: 8px 28px;
+  border-radius: 12px;
+  border: 1.5px solid #7FB7A2;
   background: transparent;
   color: #7FB7A2;
   font-weight: 300;
@@ -124,7 +131,6 @@ body {
 
 .header {
   background-image: url('header.png');
-  min-height: 200px;
   background-size: contain;
   background-repeat: no-repeat;
   color: #AA6B7C;
@@ -134,9 +140,9 @@ body {
   width: 100%;
   display: inline-block;
   text-align: center;
-  margin-top: 30%;
+  margin-top: 26%;
   color: #287255;
-  font-size: 32px;
+  font-size: 72px;
 }
 
 .header--subtitle_small {
@@ -146,7 +152,7 @@ body {
   display: inline-block;
   text-align: center;
   margin-top: 15px;
-  font-size: 10px;
+  font-size: 18px;
 }
 
 .header--subtitle {
@@ -156,37 +162,84 @@ body {
   display: inline-block;
   text-align: center;
   margin-top: 10px;
+  font-size: 24px;
 }
 
 .content-block-details {
-  margin-top: 30px;
+  margin-top: 60px;
   display: flex;
   justify-content: center;
 }
 
-.arch-container {
-  max-width: 133px;
-  color: #AA6B7C;
-}
-
 .arch-pic {
-  width: 133px;
-  height: 184px;
-  border-top-left-radius: 100px;
-  border-top-right-radius: 100px;
+  height: 450px;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .arch-pic-1 {
+  width: 100%;
   background-image: url('venue-1.png');
 }
 
 .arch-pic-2 {
+  width: 100%;
   background-image: url('venue-2.jpg');
 }
 
 .details-heading {
   font-weight: 100;
-  font-size: medium;
+  font-size: 41px;
+  color: #AA6B7C;
+}
+
+.content-block--sub_container {
+  width: 78%;
+  display: flex;
+  justify-content: center;
+}
+
+.content-block-table {
+  display: table;
+  width: 100%;
+}
+
+.content-table-row {
+  display: table-row;
+}
+
+.content-table-cell {
+  display: table-cell;
+  width: 48%;
+}
+
+.content-table-cell-divider {
+  width: 4%;
+}
+
+.third-width {
+  width: 33%;
+}
+
+.two-thirds-width {
+  width: 67%;
+}
+
+.padding-vertical--regular {
+  padding: 7.5px 0;
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.text-description {
+  font-weight: 100;
+  font-size: 24px;
+}
+
+.red-text {
+  color: #AA6B7C;
 }
